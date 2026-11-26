@@ -27,7 +27,7 @@ export default function Footer() {
             <li><Icon name="phone" size={18} /><a href={CONTACT.phoneHref}>{CONTACT.phone}</a></li>
             <li><Icon name="chat" size={18} /><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener">WhatsApp</a></li>
             <li><Icon name="mail" size={18} /><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
-            <li><Icon name="pin" size={18} /><span>{CONTACT.address}</span></li>
+            <li><Icon name="pin" size={18} /><a href={CONTACT.mapHref} target="_blank" rel="noopener noreferrer">{CONTACT.address}</a></li>
           </ul>
         </div>
         <div>
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
       <div className="container footer__base">
         <p className="footer__honest"><strong>Honest sourcing.</strong> We tell you where your food comes from, who grew it and when it is in season. We only make claims we can stand behind.</p>
-        <p className="footer__note">Farmer names, quotes, prices and figures on this site are illustrative for a design project. Contact details are placeholders.</p>
+        <p className="footer__note">Farmer names, quotes, prices and figures on this site are illustrative for a design project. Phone and email are placeholders.</p>
         <p className="footer__copy">© {new Date().getFullYear()} Druk Harvest · Thimphu, Bhutan</p>
       </div>
     </footer>

@@ -31,7 +31,8 @@ export const CONTACT = {
   phoneHref: 'tel:+97517000000',
   whatsapp: '97517000000',
   email: 'hello@drukharvest.example',
-  address: 'Placeholder address, Changzamtog, Thimphu',
+  address: 'Startup Centre, Changzamtok, Thimphu 11001',
+  mapHref: 'https://www.google.com/maps/search/?api=1&query=Startup+Centre+Changzamtok+Thimphu+Bhutan',
 };
 
 export const DELIVERY = [

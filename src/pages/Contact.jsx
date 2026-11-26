@@ -239,9 +239,9 @@ export default function Contact() {
                 <li><Icon name="chat" /><div><small>WhatsApp</small><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener">Message us</a></div></li>
                 <li><Icon name="mail" /><div><small>Email</small><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div></li>
                 <li><Icon name="clock" /><div><small>Hours</small><span>Mon–Sat, 9 am – 6 pm</span></div></li>
-                <li><Icon name="pin" /><div><small>Office</small><span>{CONTACT.address}</span></div></li>
+                <li><Icon name="pin" /><div><small>Office</small><a href={CONTACT.mapHref} target="_blank" rel="noopener noreferrer">{CONTACT.address}</a></div></li>
               </ul>
-              <p className="fine fine--light">All contact details are placeholders.</p>
+              <p className="fine fine--light">Phone and email are placeholders.</p>
             </Reveal>
             <Reveal delay={1} className="contact__card">
               <h2>Where we deliver</h2>

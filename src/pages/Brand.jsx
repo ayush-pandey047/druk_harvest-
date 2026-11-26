@@ -97,11 +97,11 @@ export default function Brand() {
               <p>The full brand identity guide as a PDF, and every logo version as transparent PNG and SVG files for slides, documents and print.</p>
             </div>
             <div className="downloads__links">
-              <a className="download" href="/brand-assets/Druk-Harvest-Brand-Identity-Guide.pdf" download>
+              <a className="download" href={`${import.meta.env.BASE_URL}brand-assets/Druk-Harvest-Brand-Identity-Guide.pdf`} download>
                 <span className="download__icon download__icon--pdf">PDF</span>
                 <span><strong>Brand Identity Guide</strong><small>18 pages · A4 landscape · 2.6 MB</small></span>
               </a>
-              <a className="download" href="/brand-assets/Druk-Harvest-Logos.zip" download>
+              <a className="download" href={`${import.meta.env.BASE_URL}brand-assets/Druk-Harvest-Logos.zip`} download>
                 <span className="download__icon"><LogoMark size={34} /></span>
                 <span><strong>Logo pack</strong><small>7 PNGs + 2 SVGs · 0.3 MB</small></span>
               </a>
