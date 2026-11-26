@@ -17,6 +17,7 @@ const Recipes = lazy(() => import('./pages/Recipes.jsx'));
 const RecipeDetail = lazy(() => import('./pages/RecipeDetail.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Brand = lazy(() => import('./pages/Brand.jsx'));
+const BrandPrint = lazy(() => import('./pages/BrandPrint.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 
 function ScrollToTop() {
@@ -27,6 +28,8 @@ function ScrollToTop() {
 
 export default function App() {
   const { pathname } = useLocation();
+  // the printable brand guide renders without the site chrome
+  if (pathname === '/brand/print') return <Suspense fallback={null}><BrandPrint /></Suspense>;
   return (
     <>
       <a href="#main" className="skip-link">Skip to content</a>

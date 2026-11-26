@@ -630,3 +630,20 @@
 .logo-construct__tag--d { bottom: 5%; left: 6%; background: var(--lapis); }
 
 .logo-construct__tag--c { background: #1B6B34; }
+
+/* Brand kit downloads */
+.brand-downloads { padding-block: 48px; }
+.downloads { display: grid; gap: 28px; align-items: center; grid-template-columns: 1.2fr 1fr; background: var(--green-deep); color: var(--cream); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 48px); box-shadow: 8px 8px 0 var(--saffron); }
+.downloads h2 { margin: 0 0 8px; }
+.downloads .kicker { color: var(--saffron); }
+.downloads p { margin: 0; opacity: 0.9; }
+.downloads__links { display: grid; gap: 12px; }
+.download { display: flex; align-items: center; gap: 14px; padding: 14px 18px; border-radius: 18px; background: var(--cream); color: var(--charcoal); text-decoration: none; border: 2px solid var(--charcoal); transition: transform var(--t-fast) var(--ease-out); }
+.download:hover { transform: translate(-2px, -2px); }
+.download:focus-visible { outline: 3px solid var(--saffron); outline-offset: 3px; }
+.download strong { display: block; font-family: var(--font-serif); font-size: 1.15rem; }
+.download small { color: var(--muted); }
+.download__icon { width: 52px; height: 52px; flex: none; border-radius: 12px; display: grid; place-items: center; background: var(--surface); border: 2px solid var(--charcoal); }
+.download__icon--pdf { background: var(--chilli); color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.06em; }
+@media (max-width: 760px) { .downloads { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .biz-card__back { transform: translate(8px, 40px) rotate(3deg); } .biz-card:hover .biz-card__back { transform: translate(12px, 48px) rotate(5deg); } }

@@ -9,7 +9,7 @@ import Icon from '../illustrations/Icon.jsx';
 import { farmers, products } from '../lib/data.js';
 import useMeta from '../hooks/useMeta.js';
 
-const PALETTE = [
+export const PALETTE = [
   { name: 'Paddy Green', hex: '#2E8B3E', role: 'Primary', why: 'Summer terraces and fresh produce. Used for primary actions and growth.', ink: '#fff' },
   { name: 'Forest Deep', hex: '#0F3B27', role: 'Primary dark', why: 'Blue pine and cypress forests. Our "black": text on light, base for dark sections.', ink: '#fff' },
   { name: 'Saffron Gold', hex: '#F6B31B', role: 'Accent', why: 'Ripe paddy in October and the gold of dzong roofs. Highlights and key buttons.', ink: '#22190F' },
@@ -21,7 +21,7 @@ const PALETTE = [
   { name: 'Earth Charcoal', hex: '#22190F', role: 'Text', why: 'Wood smoke and tilled soil. 15:1 contrast on Rice Cream.', ink: '#fff' },
 ];
 
-const PERSONAS = [
+export const PERSONAS = [
   { name: 'Pema, 34', tag: 'Household · Thimphu', need: 'Weekly vegetables without the market trip. Price clarity and origin.' },
   { name: 'Chef Karma, 41', tag: 'Hotel kitchen', need: 'Steady seasonal supply and red rice. Quick quotes and lead times.' },
   { name: 'Sonam, 52', tag: 'Farmer · valley village', need: 'Simple words, clear steps, a phone or WhatsApp number.' },
@@ -38,7 +38,7 @@ const SITEMAP = [
   ['Contact', '/contact', ['Household', 'Business', 'Supplier']],
 ];
 
-function SocialPost({ variant }) {
+export function SocialPost({ variant }) {
   const p = products.find((x) => x.id === (variant === 'product' ? 'mandarins' : 'red-rice'));
   if (variant === 'farmer') {
     const f = farmers[1];
@@ -85,6 +85,28 @@ export default function Brand() {
             <Reveal as="p" delay={2} className="page-hero__lede">How Druk Harvest looks, sounds and behaves, and why. A one-page summary of the identity behind this website.</Reveal>
           </div>
           <Reveal variant="scale" delay={2} className="brand-hero__mark"><LogoMark size={220} reversed /></Reveal>
+        </div>
+      </section>
+
+      <section className="section brand-downloads">
+        <div className="container">
+          <div className="downloads">
+            <div>
+              <p className="kicker">Brand kit</p>
+              <h2>Take the brand with you.</h2>
+              <p>The full brand identity guide as a PDF, and every logo version as transparent PNG and SVG files for slides, documents and print.</p>
+            </div>
+            <div className="downloads__links">
+              <a className="download" href="/brand-assets/Druk-Harvest-Brand-Identity-Guide.pdf" download>
+                <span className="download__icon download__icon--pdf">PDF</span>
+                <span><strong>Brand Identity Guide</strong><small>18 pages · A4 landscape · 2.6 MB</small></span>
+              </a>
+              <a className="download" href="/brand-assets/Druk-Harvest-Logos.zip" download>
+                <span className="download__icon"><LogoMark size={34} /></span>
+                <span><strong>Logo pack</strong><small>7 PNGs + 2 SVGs · 0.3 MB</small></span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
