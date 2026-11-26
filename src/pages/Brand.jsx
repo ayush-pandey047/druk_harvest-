@@ -108,26 +108,26 @@ export default function Brand() {
 
       <section className="section brand-logo">
         <div className="container">
-          <SectionHead kicker="02 · Logo" title="The bowl that carries the harvest." />
+          <SectionHead kicker="02 · Logo" title="D for Druk, held up by the farmer." />
           <div className="brand-two">
             <Reveal className="logo-construct">
               <svg viewBox="0 0 320 320" aria-hidden="true" className="logo-construct__grid">
                 <path d="M0 80h320M0 160h320M0 240h320M80 0v320M160 0v320M240 0v320" stroke="currentColor" strokeOpacity=".12" />
               </svg>
               <LogoMark size={240} />
-              <span className="logo-construct__tag logo-construct__tag--a">Rising sun · a fresh harvest every morning</span>
-              <span className="logo-construct__tag logo-construct__tag--b">Three paddy stalks · farmer, us, you</span>
-              <span className="logo-construct__tag logo-construct__tag--c">Bangchung · farm to table</span>
-              <span className="logo-construct__tag logo-construct__tag--d">The weave · community</span>
+              <span className="logo-construct__tag logo-construct__tag--a">Snow peak &amp; sun · Druk Yul</span>
+              <span className="logo-construct__tag logo-construct__tag--b">Golden grain · the harvest</span>
+              <span className="logo-construct__tag logo-construct__tag--c">Terraces · our valleys</span>
+              <span className="logo-construct__tag logo-construct__tag--d">Paddy-stalk spine · farmers hold us up</span>
             </Reveal>
             <Reveal delay={1} className="logo-explain">
-              <p>The mark is a <strong>bangchung</strong>, the woven bamboo bowl Bhutanese families have used for generations to carry rice and ema datshi between home and field and to share food at the table. It is literally how food travels <em>from farm to table</em>, so it carries our whole promise in one shape.</p>
-              <p>Out of the bowl grow <strong>three paddy stalks</strong>. Rice is the heart of every Bhutanese meal, and three stalks from one bowl stand for the three people we connect: <strong>the farmer, Druk Harvest and your family</strong>. A <strong>saffron sun</strong> rises behind them: a new day's harvest, picked fresh.</p>
-              <p>The zig-zag <strong>weave</strong> comes from bangchung and kira weaving, where many thin strands become one strong bowl. That is how a community works. The bowl is <strong>chilli red</strong>, the colour of ema drying on rooftops and of the kemar band on dzong walls.</p>
+              <p>The mark is the letter <strong>D, for Druk</strong>: Druk Yul, the Land of the Thunder Dragon, the name every Bhutanese knows as home.</p>
+              <p>The straight side of the D is a <strong>paddy stalk</strong>, heavy with golden grain. Take the stalk away and the letter falls apart. That is the idea: <strong>farmers are the backbone</strong> that hold Druk Harvest up.</p>
+              <p>Inside the bowl of the D is <strong>the land itself</strong>: a snow peak, the morning sun and terraced paddies in chilli, saffron and green. Everything we sell grows inside Bhutan, in valleys like these.</p>
               <ul className="logo-why">
-                <li><strong>Why not the dragon?</strong> The druk belongs to the nation and its emblem. Out of respect, the name carries "Druk" and the mark carries daily life.</li>
-                <li><strong>Why not a generic leaf or tractor?</strong> Any farm brand in the world could use those. Only Bhutan has the bangchung.</li>
-                <li><strong>Why so simple?</strong> It has to read on a phone screen, a rice sack and a 24 px favicon, and still look right in one colour.</li>
+                <li><strong>Why a letter and not the dragon?</strong> The druk belongs to the nation and its emblem. Out of respect we carry its name, not its image.</li>
+                <li><strong>Why a monogram?</strong> One bold shape is easy to remember and still reads on a phone, a rice sack, a jar lid and a 24 px favicon.</li>
+                <li><strong>Why these colours?</strong> Lapis from the prayer-flag sky, saffron from ripe paddy, chilli red from ema and the dzong's kemar band, green from summer terraces.</li>
               </ul>
               <p>The wordmark is set in <strong>Fraunces</strong>, soft and friendly rather than corporate. "Harvest" is italic, like a handwritten label on a sack of rice.</p>
               <div className="logo-rules">

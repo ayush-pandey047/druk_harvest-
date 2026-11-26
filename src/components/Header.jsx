@@ -76,7 +76,7 @@ export default function Header() {
     <>
       <header className={`header${scrolled ? ' is-scrolled' : ''}${darkHero && !scrolled ? ' header--light' : ''}${hidden && !open ? ' is-hidden' : ''}`}>
         <div className="container header__inner">
-          <Link to="/" className="header__logo" aria-label="Druk Harvest, home"><Logo /></Link>
+          <Link to="/" className="header__logo" aria-label="Druk Harvest, home"><Logo reversed={darkHero && !scrolled} /></Link>
           <nav className="header__nav" aria-label="Main">
             {NAV.slice(1, 6).map((n) => (
               <NavLink key={n.to} to={n.to} end={n.end} className="header__link">{n.label}</NavLink>

@@ -1,31 +1,44 @@
+import { useId } from 'react';
+
 /**
- * Mark: a bangchung (the woven bamboo food bowl carried between field and home)
- * holding three paddy stalks, with the morning sun rising behind them.
- *  - bangchung  = farm to table: how Bhutanese families have always carried their food
- *  - the weave  = many strands, one bowl: farmers, Druk Harvest and families held together
- *  - 3 stalks   = the farmer, us and you, growing from the same bowl
- *  - sun        = a new day's harvest, fresh every morning
+ * Mark: the letter D, for Druk.
+ *  - its straight side is a paddy stalk heavy with grain: farmers are the backbone that hold us up
+ *  - its bowl holds the land: snow peak, morning sun and terraced paddies, because everything we sell grows inside Bhutan
+ *  - a letter, not the dragon itself: the druk belongs to the nation and its emblem
  */
 export function LogoMark({ size = 40, mono, reversed, title }) {
-  const ink = mono ? 'currentColor' : null;
-  const sun = ink ?? '#F6B31B';
-  const stalk = ink ?? (reversed ? '#FFF6E3' : '#0F3B27');
-  const leaf = ink ?? (reversed ? '#9BD77A' : '#2E8B3E');
-  const bowl = ink ?? '#D7322A';
-  const rim = ink ?? (reversed ? '#F6B31B' : '#0F3B27');
-  const weave = mono ? 'var(--bg, #fff)' : '#FFF6E3';
+  const id = useId().replace(/:/g, '');
+  const line = mono ? 'currentColor' : reversed ? '#FFF6E3' : '#0F3B27';
+  const grain = mono ? 'currentColor' : '#F6B31B';
+  const bowl = 'M24 8h8c15 0 26 10.5 26 24S47 56 32 56h-8z';
   return (
     <svg width={size} height={size} viewBox="0 0 64 64" role={title ? 'img' : undefined} aria-hidden={title ? undefined : true} aria-label={title}>
-      <path d="M15 32a17 17 0 0 1 34 0z" fill={sun} opacity={mono ? 0.35 : 1} />
-      <path d="M32 31V12.5M26.5 31c-.8-5.5-3.6-10-8.5-13M37.5 31c.8-5.5 3.6-10 8.5-13" stroke={stalk} strokeWidth="2.6" strokeLinecap="round" fill="none" />
-      <ellipse cx="32" cy="10" rx="2.9" ry="5.4" fill={stalk} />
-      <ellipse cx="16.6" cy="16" rx="2.6" ry="5" transform="rotate(-52 16.6 16)" fill={stalk} />
-      <ellipse cx="47.4" cy="16" rx="2.6" ry="5" transform="rotate(52 47.4 16)" fill={stalk} />
-      <path d="M30.5 31c-5.5-1.4-8.4-5.2-8.6-10.2 4.8.9 7.8 4.6 8.6 10.2zM33.5 31c5.5-1.4 8.4-5.2 8.6-10.2-4.8.9-7.8 4.6-8.6 10.2z" fill={leaf} />
-      <path d="M9 35h46c0 12-10.3 21-23 21S9 47 9 35z" fill={bowl} />
-      <path d="M13.5 42.5l4.6 4.6 4.6-4.6 4.6 4.6 4.6-4.6 4.6 4.6 4.6-4.6 4.6 4.6 4.6-4.6" stroke={weave} strokeWidth="2.3" strokeLinejoin="round" strokeLinecap="round" fill="none" />
-      <path d="M19 51.5h26" stroke={weave} strokeWidth="1.6" strokeLinecap="round" opacity=".7" />
-      <rect x="6" y="30" width="52" height="6.5" rx="3.25" fill={rim} />
+      <defs><clipPath id={`${id}-d`}><path d={bowl} /></clipPath></defs>
+      <g clipPath={`url(#${id}-d)`}>
+        {mono ? (
+          <>
+            <path d="M22 41 34 24l5 6 6-8 15 19z" fill="currentColor" opacity=".35" />
+            <circle cx="45" cy="19" r="4.5" fill="currentColor" opacity=".35" />
+            <path d="M22 45c13-3.4 25-3.4 38 0M22 51c13-3.4 25-3.4 38 0" stroke="currentColor" strokeWidth="2.6" fill="none" />
+          </>
+        ) : (
+          <>
+            <rect x="20" y="4" width="44" height="56" fill="#FFE3A0" />
+            <circle cx="45" cy="19" r="5.5" fill="#F6B31B" />
+            <path d="M22 41 34 24l5 6 6-8 15 19z" fill="#2440A6" />
+            <path d="M34 24l-3.4 4.6 2.8-.6 2.2 2 2.4-1.6zM45 22l-2.8 3.8 2.4-.3 2 1.4 2-1.4z" fill="#FFFDF7" />
+            <path d="M20 40c14-3.6 30-3.6 44 0v20H20z" fill="#2E8B3E" />
+            <path d="M20 45c14-3.6 30-3.6 44 0v15H20z" fill="#F6B31B" />
+            <path d="M20 50c14-3.6 30-3.6 44 0v10H20z" fill="#D7322A" />
+            <path d="M20 55c14-3.6 30-3.6 44 0v5H20z" fill="#F6B31B" />
+          </>
+        )}
+      </g>
+      <path d="M24 8h8c15 0 26 10.5 26 24S47 56 32 56h-8" fill="none" stroke={line} strokeWidth="5" strokeLinejoin="round" />
+      <path d="M24 62V6" stroke={line} strokeWidth="5" strokeLinecap="round" />
+      {[[17.6, 7.5, -38], [17, 15.5, -38], [17.6, 23.5, -38], [24, 4.6, 0]].map(([cx, cy, r], i) => (
+        <ellipse key={i} cx={cx} cy={cy} rx="2.7" ry="4.4" transform={`rotate(${r} ${cx} ${cy})`} fill={grain} stroke={mono ? 'none' : line} strokeWidth="1.3" />
+      ))}
     </svg>
   );
 }
