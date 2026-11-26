@@ -1,0 +1,54 @@
+:root {
+  /* Brand palette — taken from painted dzong woodwork, prayer flags and the harvest */
+  --green: #2E8B3E;          /* Paddy Green (primary) */
+  --green-deep: #0F3B27;     /* Forest Deep */
+  --saffron: #F6B31B;        /* Saffron Gold */
+  --marigold: #FF7A1A;       /* Marigold */
+  --chilli: #D7322A;         /* Chilli Red */
+  --chilli-deep: #9E1F1B;
+  --turquoise: #0FA3A0;      /* Woodwork Turquoise */
+  --lapis: #2440A6;          /* Prayer-flag Lapis */
+  --cream: #FFF6E3;          /* Rice Cream (background) */
+  --sand: #F7E6C4;           /* Soft Sand (surface) */
+  --charcoal: #22190F;       /* Earth Charcoal (text) */
+  --muted: #5E4E3C;
+
+  --text: var(--charcoal);
+  --bg: var(--cream);
+  --surface: #FFFDF7;
+  --line: rgba(34, 25, 15, 0.14);
+
+  /* Type */
+  --font-serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-dz: 'Jomolhari', 'Noto Serif Tibetan', 'Microsoft Himalaya', serif;
+
+  --fs-h1: clamp(2.6rem, 1.4rem + 5.4vw, 5.8rem);
+  --fs-h2: clamp(2rem, 1.3rem + 2.8vw, 3.4rem);
+  --fs-h3: clamp(1.35rem, 1.1rem + 0.9vw, 1.75rem);
+  --fs-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --fs-small: 0.875rem;
+
+  /* Space (8px scale) */
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 48px; --s6: 64px; --s7: 96px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1200px;
+  --radius: 18px;
+  --radius-lg: 28px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 200ms;
+  --t-base: 400ms;
+  --t-slow: 800ms;
+  --stagger: 80ms;
+
+  --shadow-1: 0 1px 0 rgba(34, 25, 15, 0.08), 0 6px 18px -8px rgba(34, 25, 15, 0.25);
+  --shadow-2: 0 2px 0 rgba(34, 25, 15, 0.08), 0 22px 40px -18px rgba(34, 25, 15, 0.4);
+
+  /* Hand-woven kira band, used as a divider and trim */
+  --kira: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='24' viewBox='0 0 48 24'%3E%3Crect width='48' height='24' fill='%23D7322A'/%3E%3Crect y='0' width='48' height='3' fill='%230F3B27'/%3E%3Crect y='21' width='48' height='3' fill='%230F3B27'/%3E%3Cpath d='M0 12 L12 4 L24 12 L12 20Z' fill='%23F6B31B'/%3E%3Cpath d='M24 12 L36 4 L48 12 L36 20Z' fill='%230FA3A0'/%3E%3Cpath d='M8 12 L12 9 L16 12 L12 15Z' fill='%23D7322A'/%3E%3Cpath d='M32 12 L36 9 L40 12 L36 15Z' fill='%23FFF6E3'/%3E%3Crect x='23' y='3' width='2' height='18' fill='%232440A6'/%3E%3C/svg%3E");
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.1 0 0 0 0 0.06 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}

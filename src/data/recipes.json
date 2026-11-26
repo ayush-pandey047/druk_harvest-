@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ema-datshi",
+    "title": "Ema Datshi, the everyday way",
+    "type": "recipe",
+    "products": ["green-chilli", "datshi"],
+    "time": "20 min",
+    "serves": "3–4",
+    "art": "ema-datshi",
+    "summary": "Chillies and cheese, simmered together. Every family has its own version. This is a simple one to start from.",
+    "ingredients": [
+      "250 g fresh green chilli, split lengthways",
+      "4 rounds datshi cheese, broken up",
+      "1 onion, sliced",
+      "1 tomato, chopped",
+      "2 cloves garlic, crushed (optional)",
+      "1 tbsp oil",
+      "1 cup water",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Put the chillies, onion, oil and water in a pot. Bring to a boil and cook for about 8 minutes.",
+      "Add the tomato and garlic. Cook for another 2 minutes.",
+      "Add the datshi and stir gently until it melts into the sauce. Do not let it boil hard.",
+      "Taste, add salt, and serve hot with red rice."
+    ]
+  },
+  {
+    "id": "red-rice-bowl",
+    "title": "Red Rice Bowl with Seasonal Greens",
+    "type": "recipe",
+    "products": ["red-rice", "seasonal-greens"],
+    "time": "35 min",
+    "serves": "2",
+    "art": "rice-bowl",
+    "summary": "A simple, filling bowl built around Paro red rice and whatever greens are fresh this week.",
+    "ingredients": [
+      "1 cup Paro red rice",
+      "2 cups water",
+      "1 bunch seasonal greens, chopped",
+      "1 small onion, sliced",
+      "1 dried red chilli, crushed",
+      "1 tbsp butter or oil",
+      "Salt"
+    ],
+    "steps": [
+      "Rinse the rice, add the water and a pinch of salt. Simmer covered for about 25 minutes.",
+      "Meanwhile, soften the onion in butter. Add the chilli and the greens and cook until just wilted.",
+      "Spoon the greens over the rice and serve."
+    ]
+  },
+  {
+    "id": "khuli",
+    "title": "Khuli: Buckwheat Pancakes",
+    "type": "recipe",
+    "products": ["buckwheat-flour", "spring-honey"],
+    "time": "25 min",
+    "serves": "4",
+    "art": "khuli",
+    "summary": "Soft buckwheat pancakes from Bumthang. Eat them with ezay, or with honey for something sweeter.",
+    "ingredients": [
+      "2 cups buckwheat flour",
+      "About 2 cups water",
+      "1 egg (optional)",
+      "Pinch of salt",
+      "Butter for the pan",
+      "Honey to serve"
+    ],
+    "steps": [
+      "Whisk the flour, salt, egg and water into a thick, pourable batter. Rest for 10 minutes.",
+      "Heat a flat pan with a little butter. Pour in a ladle of batter and spread it thin.",
+      "Cook until bubbles form, then flip and cook for another minute.",
+      "Stack and serve warm with honey."
+    ]
+  },
+  {
+    "id": "kewa-datshi",
+    "title": "Kewa Datshi",
+    "type": "recipe",
+    "products": ["potatoes", "datshi", "dried-chilli"],
+    "time": "30 min",
+    "serves": "3–4",
+    "art": "kewa-datshi",
+    "summary": "Potatoes and cheese with a little chilli. A gentle start for visitors who are new to Bhutanese heat.",
+    "ingredients": [
+      "4 highland potatoes, sliced",
+      "3 rounds datshi cheese",
+      "2 dried red chillies, broken",
+      "1 onion, sliced",
+      "1 tbsp butter",
+      "1½ cups water",
+      "Salt"
+    ],
+    "steps": [
+      "Boil the potatoes, onion, chilli and butter in the water for about 12 minutes, until the potatoes are just tender.",
+      "Add the datshi and stir until melted.",
+      "Simmer for 2 more minutes, add salt and serve."
+    ]
+  },
+  {
+    "id": "bumthang-bees",
+    "title": "A morning with the bees in Chhume",
+    "type": "story",
+    "products": ["spring-honey", "honeycomb"],
+    "time": "4 min read",
+    "art": "story-bees",
+    "summary": "Ap Ugyen on reading the weather, leaving enough for winter, and why he never rushes a hive.",
+    "body": [
+      "Ap Ugyen does not open a hive before eleven. 'The bees are still waking up,' he says. 'If you disturb them in the cold, they remember.'",
+      "His forty hives sit in rows at the edge of the buckwheat field. In a good flowering year, the field turns pink-white and the air hums for weeks.",
+      "He takes honey only from full frames, and leaves enough in every hive for the bees to get through Bumthang's winter. 'Some years that means less honey for us. That is fine. Next year comes.'",
+      "What he enjoys most is the spinning: the frames turning in the hand-cranked extractor, and the first golden thread running out into the bucket."
+    ]
+  },
+  {
+    "id": "november-update",
+    "title": "November: mandarins arrive, red rice is in",
+    "type": "seasonal",
+    "products": ["mandarins", "red-rice", "apples"],
+    "time": "2 min read",
+    "art": "story-season",
+    "summary": "What's fresh this month, and what is about to finish.",
+    "body": [
+      "The first mandarins from Tsirang are being picked this month. Early fruit can be a little tart, and sweetens as December goes on.",
+      "Paro's red rice harvest is threshed and dried, so new-season rice is now available for households and kitchens.",
+      "Apples are in their last weeks. If you want a box for winter, now is the time to ask.",
+      "Fresh green chilli has finished for the year. Sun-dried red chilli takes its place through winter."
+    ]
+  }
+]

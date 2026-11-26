@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pem-zam",
+    "name": "Aum Pem Zam",
+    "village": "Shaba, Paro",
+    "district": "Paro",
+    "grows": ["red-rice", "apples"],
+    "dress": "kira",
+    "palette": ["#C8402F", "#E0A526", "#1F4A2B"],
+    "skin": "#A86F4C",
+    "short": "Has worked the same terraced paddies for over thirty years, alongside her daughter and two neighbours.",
+    "quote": "Red rice is slow. You wait for the water, you wait for the sun, you wait for the grain to turn. Then everyone in the village comes to help cut it.",
+    "day": "Her day starts before six with butter tea and a walk along the water channels, checking that every terrace is getting its share. Mornings are for the field; afternoons for the apple trees behind the house.",
+    "method": "She plants seedlings by hand in late spring, keeps the terraces flooded through summer and harvests with a sickle in October. The rice dries on bamboo racks before it is threshed.",
+    "pride": "That her grandchildren know which terrace is which, and who planted it.",
+    "season": {
+      "prepare": "In April the terraces are ploughed and the walls repaired after winter.",
+      "plant": "In June, seedlings go into flooded paddies, one handful at a time.",
+      "tend": "All summer, water is shared between families and weeds pulled by hand.",
+      "harvest": "In October the whole village cuts and stacks the golden stalks."
+    }
+  },
+  {
+    "id": "ugyen",
+    "name": "Ap Ugyen",
+    "village": "Chhume, Bumthang",
+    "district": "Bumthang",
+    "grows": ["spring-honey", "forest-honey", "honeycomb", "buckwheat-flour", "potatoes", "mushrooms"],
+    "dress": "gho",
+    "palette": ["#7A4A2A", "#E0A526", "#FAF6EC"],
+    "skin": "#8E5B3D",
+    "short": "Keeps about forty hives and a small buckwheat field at 2,700 metres. Learned beekeeping from his uncle.",
+    "quote": "Bees tell you about the season before anyone else does. A good buckwheat flowering, a good honey year.",
+    "day": "He checks the hives in the late morning, once the sun has warmed them. Winter days are for mending boxes and milling buckwheat in the family mill.",
+    "method": "Hives sit near buckwheat and apple blossom. Honey is taken only from full frames, and enough is always left for the bees to get through the cold months.",
+    "pride": "His honey sits on the tables of families in Thimphu who have never been to Bumthang.",
+    "season": {
+      "prepare": "In March he opens the hives and checks which colonies came through winter.",
+      "plant": "In May buckwheat is sown on the slopes near the hives.",
+      "tend": "Through summer he watches the flowering and adds boxes as hives grow.",
+      "harvest": "From August, full frames are taken and honey is spun and jarred by hand."
+    }
+  },
+  {
+    "id": "kinley",
+    "name": "Kinley Wangmo",
+    "village": "Lobesa, Punakha",
+    "district": "Punakha",
+    "grows": ["green-chilli", "dried-chilli", "asparagus", "peaches", "maize-kharang"],
+    "dress": "kira",
+    "palette": ["#3F7D3A", "#C8402F", "#EFE7D4"],
+    "skin": "#9A6646",
+    "short": "Grows chillies, asparagus and peaches in the warm valley, and dries red chilli on her rooftop every autumn.",
+    "quote": "People ask why our chillies taste different. I tell them: come in September and see the roofs.",
+    "day": "Picking starts at first light, before the heat. By ten the chillies are sorted into crates for the morning pickup.",
+    "method": "She rotates chilli with mustard greens so the soil gets a rest, and saves seed from her strongest plants each year.",
+    "pride": "Her rooftop in October: completely red.",
+    "season": {
+      "prepare": "In February seedbeds are made and last year's seed is sown under cover.",
+      "plant": "In April young chilli plants move out into the field rows.",
+      "tend": "Through the monsoon, rows are weeded and staked against the rain.",
+      "harvest": "From June, green chillies are picked. In autumn the last ones ripen red for drying."
+    }
+  },
+  {
+    "id": "dorji",
+    "name": "Dorji Tshering",
+    "village": "Mendrelgang, Tsirang",
+    "district": "Tsirang",
+    "grows": ["mandarins"],
+    "dress": "gho",
+    "palette": ["#1F4A2B", "#E0A526", "#FAF6EC"],
+    "skin": "#7E5136",
+    "short": "Looks after a hillside orchard of around two hundred mandarin trees that his father planted.",
+    "quote": "Every tree here is older than my son. We pick only what is ready, then come back the next week.",
+    "day": "In winter he is in the orchard from morning to dusk, picking into bamboo baskets and grading fruit under the trees.",
+    "method": "Fruit is picked by hand over several passes, so each box holds oranges that ripened on the tree.",
+    "pride": "The first box of the season, which always goes to his mother.",
+    "season": {
+      "prepare": "In March the trees are pruned and the terraces cleared.",
+      "plant": "In the monsoon, young trees replace any that were lost.",
+      "tend": "Through autumn the fruit fills out and slowly turns from green to gold.",
+      "harvest": "From late November, the orchard is picked over again and again until February."
+    }
+  },
+  {
+    "id": "tshering",
+    "name": "Tshering Yangzom",
+    "village": "Katsho, Haa",
+    "district": "Haa",
+    "grows": ["datshi", "chugo", "seasonal-greens"],
+    "dress": "kira",
+    "palette": ["#2E5A7A", "#E0A526", "#C8402F"],
+    "skin": "#A06A48",
+    "short": "Makes datshi and chugo from her family's cattle, and grows greens in the kitchen garden beside the dairy.",
+    "quote": "Good datshi needs patience and clean hands. My mother checked mine for years before she let me sell it.",
+    "day": "Milking at dawn, cheese-making by mid-morning. In winter the chugo hangs in the kitchen rafters to dry.",
+    "method": "Milk is churned for butter first, and the buttermilk is heated slowly to make datshi, the way her family has always done it.",
+    "pride": "Customers who come back and ask for 'Tshering's cheese' by name.",
+    "season": {
+      "prepare": "In spring the herd moves up to the summer pastures.",
+      "plant": "The kitchen garden is planted with greens and radish in April.",
+      "tend": "Summer milk is richest. Datshi is made almost every day.",
+      "harvest": "In autumn the herd returns, and chugo is made and strung for winter."
+    }
+  }
+]
