@@ -282,15 +282,17 @@
 .quote-sec { background: var(--lapis); color: var(--cream); }
 .big-quote { margin: 0 auto; max-width: 960px; text-align: center; }
 .big-quote p { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.6rem, 1.1rem + 2.4vw, 3.2rem); line-height: 1.22; }
-.big-quote p::before { content: '“'; display: block; font-size: 5em; line-height: 0.6; color: var(--saffron); font-style: normal; }
+.big-quote__mark { color: var(--saffron); font-size: 1.35em; line-height: 0; vertical-align: -0.12em; margin: 0 0.04em; }
 .big-quote footer { font-weight: 800; }
 .big-quote small { font-weight: 600; opacity: 0.75; }
 .team__grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .team__card { padding: 28px; border: 2px solid var(--charcoal); border-radius: var(--radius-lg); background: var(--surface); box-shadow: 8px 8px 0 var(--tone); overflow: hidden; transition: transform 0.5s var(--ease-spring), box-shadow 0.4s; }
 .team__card:hover { transform: translateY(-8px) rotate(-1deg); box-shadow: 10px 14px 0 var(--tone); }
-.team__avatar { position: relative; width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-family: var(--font-serif); font-size: 2.4rem; font-weight: 700; margin-bottom: 18px; border: 3px solid var(--charcoal); transition: transform 0.6s var(--ease-spring); }
-.team__card:hover .team__avatar { transform: rotate(-10deg) scale(1.06); }
-.team__avatar i { position: absolute; right: -6px; bottom: -4px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--saffron); color: var(--charcoal); border: 2.5px solid var(--charcoal); }
+.team__photo { position: relative; margin: -8px -8px 20px; padding: 10px 10px 0; background: var(--tone); border-radius: 999px 999px 18px 18px; border: 2px solid var(--charcoal); }
+.team__photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 10px 10px; border: 2px solid var(--charcoal); border-bottom: 0; transition: transform 0.6s var(--ease-out); }
+.team__card:hover .team__photo img { transform: scale(1.03); }
+.team__photo i { position: absolute; right: 12px; bottom: -14px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--saffron); color: var(--charcoal); border: 2.5px solid var(--charcoal); transition: transform 0.6s var(--ease-spring); }
+.team__card:hover .team__photo i { transform: rotate(-12deg) scale(1.08); }
 .team__role { font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--chilli) !important; margin: 0 0 2px !important; }
 .team__card h3 { font-size: 1.9rem; margin-bottom: 8px; }
 .team__card p { color: var(--muted); margin: 0; }
@@ -647,3 +649,101 @@
 .download__icon--pdf { background: var(--chilli); color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.06em; }
 @media (max-width: 760px) { .downloads { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .biz-card__back { transform: translate(8px, 40px) rotate(3deg); } .biz-card:hover .biz-card__back { transform: translate(12px, 48px) rotate(5deg); } }
+
+/* ═════════ PHONES ═════════
+   Everything below tunes layouts for small screens: denser grids, smaller
+   decorative art, bigger tap targets. Desktop rules above stay untouched. */
+@media (max-width: 559px) {
+  .section { padding: 56px 0; }
+  .kicker { font-size: 0.78rem; letter-spacing: 0.14em; margin-bottom: 12px; }
+
+  /* hero: keep the sun and clouds out from behind the headline */
+  .hero__inner { gap: 20px; padding-top: 96px; padding-bottom: 48vh; }
+  .hero__title { font-size: clamp(2.4rem, 1.4rem + 6.4vw, 3.2rem); }
+  .hero__sub { font-size: 1.02rem; margin: 16px 0 22px; }
+  .hero-scene__sun { width: 104px; right: -18px; top: 76px; }
+  .hero-scene__cloud--a { top: 50%; left: 62%; width: 90px; }
+  .hero-scene__cloud--b { top: 14%; left: 38%; width: 70px; }
+  .hero__ctas .btn { flex: 1 1 100%; justify-content: center; }
+
+  /* product cards: two per row, compact */
+  .p-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .p-card { border-radius: 20px; box-shadow: 4px 4px 0 var(--charcoal); }
+  .p-card__badge { top: 8px; left: 8px; }
+  .p-card__badge .badge { font-size: 0.72rem; padding: 4px 9px; }
+  .p-card__body { padding: 10px 12px 12px; }
+  .p-card__origin { font-size: 0.72rem; margin-bottom: 4px; }
+  .p-card__origin svg { width: 12px; height: 12px; }
+  .p-card__title { font-size: 1.02rem; line-height: 1.2; margin-bottom: 8px; }
+  .p-card__local, .p-card__desc { display: none; }
+  .p-card__foot { gap: 6px; align-items: flex-end; }
+  .p-card__price { line-height: 1.15; }
+  .p-card__price strong { font-size: 0.98rem; display: block; }
+  .p-card__price small { font-size: 0.76rem; }
+  .p-card .icon-btn { width: 40px; height: 40px; flex: none; }
+  .p-card__season { font-size: 0.76rem; margin-top: 8px; padding-top: 8px; }
+
+  /* farmer cards: shorter portraits */
+  .f-card__portrait { height: 230px; display: flex; justify-content: center; padding: 16px 24px 0; }
+  .f-card__portrait .portrait { height: 100%; width: auto; }
+  .f-card__body { padding: 16px 18px 18px; }
+  .f-card__body h3 { font-size: 1.4rem; }
+
+  /* home farmer spotlight */
+  .spotlight-farmer__portrait { width: 100%; max-width: 250px; margin: 0 auto; }
+  .spotlight-farmer__stamp { width: 92px; right: -12px; bottom: 10px; }
+  .spotlight-farmer__quote p { font-size: 1.45rem; }
+
+  /* season story: less empty scrolling between steps */
+  .season-story__step { min-height: 40vh; padding-top: 20px; }
+  .season-story__step p { font-size: 1.05rem; }
+  .season-story__dots li { font-size: 0.68rem; padding: 5px 2px; }
+
+  /* CTA: the floating food chips cover the heading on a phone */
+  .cta { padding: 110px 0 72px; }
+  .cta__art { display: none; }
+  .cta__btns .btn { flex: 1 1 100%; justify-content: center; }
+
+  /* product filters: show that the category row scrolls */
+  .cat-tabs { mask-image: linear-gradient(90deg, #000 82%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent); padding-right: 32px; }
+
+  /* brand page type sample */
+  .type-scale > div { grid-template-columns: 1fr; gap: 4px; }
+  .type-scale p { white-space: normal; overflow-wrap: anywhere; }
+
+  /* catalogue bar: grid children must be allowed to shrink so tabs scroll */
+  .catalogue__bar > * { min-width: 0; }
+
+  /* delivery table on How it works */
+  .delivery__table, .delivery__table table { width: 100%; min-width: 0; }
+  .delivery > .container > *, .delivery__grid > * { min-width: 0; }
+  .delivery__table th, .delivery__table td { font-size: 0.88rem; padding-inline: 6px; overflow-wrap: anywhere; }
+
+  /* team: two per row */
+  .team__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .team__card { padding: 12px 12px 16px; box-shadow: 5px 5px 0 var(--tone); border-radius: 22px; }
+  .team__photo { margin: -2px -2px 16px; padding: 6px 6px 0; }
+  .team__photo i { width: 32px; height: 32px; right: 8px; bottom: -12px; }
+  .team__photo i svg { width: 15px; height: 15px; }
+  .team__card .team__role { font-size: 0.68rem; letter-spacing: 0.05em; overflow-wrap: anywhere; }
+  .team__card h3 { font-size: 1.3rem; margin-bottom: 4px; }
+  .team__card p { font-size: 0.86rem; line-height: 1.45; }
+
+  /* farmer profile */
+  .profile-hero__portrait { width: 100%; max-width: 260px; margin: 0 auto; }
+
+  /* quote */
+  .big-quote p { font-size: 1.45rem; }
+}
+
+/* comfortable tap targets on any touch screen */
+@media (max-width: 767px) {
+  .footer__grid { gap: 32px; padding-top: 48px; }
+  .footer__grid nav ul { grid-template-columns: 1fr 1fr; gap: 0 16px; }
+  .footer__grid nav a { display: inline-block; padding: 9px 0; }
+  .footer__contact { gap: 14px; }
+  .crumbs ol { align-items: center; }
+  .crumbs a { display: inline-block; padding: 8px 0; }
+  .board li a { padding: 12px 0; }
+  .board__all { padding: 8px 0; }
+}

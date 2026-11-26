@@ -21,10 +21,10 @@ const VALUES = [
 ];
 
 const TEAM = [
-  { name: 'Yangchen', role: 'Chief Executive Officer', text: 'Sets the direction and keeps every promise we make to farmers and families.', tone: '#D7322A', icon: 'sprout' },
-  { name: 'Choekey', role: 'Administration', text: 'Runs the day-to-day: supplier agreements, schedules and the paperwork that keeps us dependable.', tone: '#2440A6', icon: 'list' },
-  { name: 'Avinash', role: 'Marketing', text: 'Tells the farmers\' stories and makes sure people across Bhutan know where to find local food.', tone: '#FF7A1A', icon: 'heart' },
-  { name: 'Ayush', role: 'IT & Technology', text: 'Builds and looks after the website, the enquiry system and everything digital.', tone: '#0FA3A0', icon: 'check' },
+  { name: 'Yangchen', role: 'Chief Executive Officer', text: 'Sets the direction and keeps every promise we make to farmers and families.', tone: '#D7322A', icon: 'sprout', photo: 'yangchen' },
+  { name: 'Choekey', role: 'Administration', text: 'Runs the day-to-day: supplier agreements, schedules and the paperwork that keeps us dependable.', tone: '#2440A6', icon: 'list', photo: 'choekey' },
+  { name: 'Avinash', role: 'Marketing', text: 'Tells the farmers\' stories and makes sure people across Bhutan know where to find local food.', tone: '#FF7A1A', icon: 'heart', photo: 'avinash' },
+  { name: 'Ayush', role: 'IT & Technology', text: 'Builds and looks after the website, the enquiry system and everything digital.', tone: '#0FA3A0', icon: 'check', photo: 'ayush' },
 ];
 
 export default function OurStory() {
@@ -83,7 +83,7 @@ export default function OurStory() {
       <section className="section quote-sec">
         <div className="container">
           <Reveal as="blockquote" className="big-quote">
-            <p>“When a farmer knows their rice will be bought every season, they can plan. They can mend the terrace walls. They can teach their children. That's the whole idea.”</p>
+            <p><span className="big-quote__mark">“</span>When a farmer knows their rice will be bought every season, they can plan. They can mend the terrace walls. They can teach their children. That's the whole idea.<span className="big-quote__mark">”</span></p>
             <footer>The Druk Harvest team</footer>
           </Reveal>
         </div>
@@ -95,7 +95,10 @@ export default function OurStory() {
           <div className="team__grid">
             {TEAM.map((m, i) => (
               <Reveal key={m.name} delay={i} className="team__card" style={{ '--tone': m.tone }} data-spotlight>
-                <span className="team__avatar" style={{ background: m.tone }}>{m.name[0]}<i><Icon name={m.icon} size={18} /></i></span>
+                <div className="team__photo">
+                  <img src={`${import.meta.env.BASE_URL}team/${m.photo}.jpg`} alt={`${m.name}, ${m.role}`} width="560" height="700" loading="lazy" decoding="async" />
+                  <i aria-hidden="true"><Icon name={m.icon} size={18} /></i>
+                </div>
                 <p className="team__role">{m.role}</p>
                 <h3>{m.name}</h3>
                 <p>{m.text}</p>
