@@ -27,10 +27,13 @@ export function LogoMark({ size = 40, mono, reversed, title }) {
             <circle cx="45" cy="19" r="5.5" fill="#F6B31B" />
             <path d="M22 41 34 24l5 6 6-8 15 19z" fill="#2440A6" />
             <path d="M34 24l-3.4 4.6 2.8-.6 2.2 2 2.4-1.6zM45 22l-2.8 3.8 2.4-.3 2 1.4 2-1.4z" fill="#FFFDF7" />
-            <path d="M20 40c14-3.6 30-3.6 44 0v20H20z" fill="#2E8B3E" />
-            <path d="M20 45c14-3.6 30-3.6 44 0v15H20z" fill="#F6B31B" />
-            <path d="M20 50c14-3.6 30-3.6 44 0v10H20z" fill="#D7322A" />
-            <path d="M20 55c14-3.6 30-3.6 44 0v5H20z" fill="#F6B31B" />
+            {/* terraced paddies: four shades of green, lightest at the top of the hill */}
+            {[['#9BD45A', 40], ['#5DB045', 45], ['#2E8B3E', 50], ['#1B6B34', 55]].map(([c, y]) => (
+              <g key={y}>
+                <path d={`M20 ${y}c14-3.6 30-3.6 44 0v${60 - y}H20z`} fill={c} />
+                <path d={`M20 ${y}c14-3.6 30-3.6 44 0`} stroke="#E8F7C8" strokeOpacity=".55" strokeWidth=".9" fill="none" />
+              </g>
+            ))}
           </>
         )}
       </g>

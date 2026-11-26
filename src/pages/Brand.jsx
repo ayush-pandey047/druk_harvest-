@@ -123,11 +123,11 @@ export default function Brand() {
             <Reveal delay={1} className="logo-explain">
               <p>The mark is the letter <strong>D, for Druk</strong>: Druk Yul, the Land of the Thunder Dragon, the name every Bhutanese knows as home.</p>
               <p>The straight side of the D is a <strong>paddy stalk</strong>, heavy with golden grain. Take the stalk away and the letter falls apart. That is the idea: <strong>farmers are the backbone</strong> that hold Druk Harvest up.</p>
-              <p>Inside the bowl of the D is <strong>the land itself</strong>: a snow peak, the morning sun and terraced paddies in chilli, saffron and green. Everything we sell grows inside Bhutan, in valleys like these.</p>
+              <p>Inside the bowl of the D is <strong>the land itself</strong>: a snow peak, the morning sun and terraced paddies stepping down the hill in four shades of green, the way the valleys look in summer. Everything we sell grows inside Bhutan, in valleys like these.</p>
               <ul className="logo-why">
                 <li><strong>Why a letter and not the dragon?</strong> The druk belongs to the nation and its emblem. Out of respect we carry its name, not its image.</li>
                 <li><strong>Why a monogram?</strong> One bold shape is easy to remember and still reads on a phone, a rice sack, a jar lid and a 24 px favicon.</li>
-                <li><strong>Why these colours?</strong> Lapis from the prayer-flag sky, saffron from ripe paddy, chilli red from ema and the dzong's kemar band, green from summer terraces.</li>
+                <li><strong>Why these colours?</strong> Green terraces for fresh, growing paddy; lapis from the prayer-flag sky and mountains; saffron for the sun and the golden grain at harvest.</li>
               </ul>
               <p>The wordmark is set in <strong>Fraunces</strong>, soft and friendly rather than corporate. "Harvest" is italic, like a handwritten label on a sack of rice.</p>
               <div className="logo-rules">
