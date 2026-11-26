@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useSearchParams } from 'react-router-dom';
 import Icon from '../illustrations/Icon.jsx';
@@ -73,6 +73,20 @@ export default function Products() {
 
   useFlip(grid, [list.map((p) => p.id).join()]);
 
+  // When the results change while the list top is out of view, bring it back so the change is visible
+  const catalogue = useRef(null);
+  const filterKey = `${cat}|${inSeason}|${business}|${origin}`;
+  const firstRun = useRef(true);
+  useEffect(() => {
+    if (firstRun.current) { firstRun.current = false; return; }
+    const el = catalogue.current;
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 70;
+    if (Math.abs(window.scrollY - top) > 40 && window.scrollY > top) {
+      window.scrollTo({ top, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    }
+  }, [filterKey]);
+
   const activeFilters = [inSeason, business, origin].filter(Boolean).length;
   const clearAll = () => { setQuery(''); setParams(new URLSearchParams(), { replace: true }); };
   const catIndex = CATEGORIES.findIndex((c) => c.id === cat);
@@ -111,7 +125,7 @@ export default function Products() {
         </div>
       </section>
 
-      <section className="catalogue section--tight">
+      <section className="catalogue section--tight" ref={catalogue}>
         <div className="container">
           <div className="catalogue__bar">
             <div className="cat-tabs" role="tablist" aria-label="Product categories" style={{ '--a': catIndex }}>

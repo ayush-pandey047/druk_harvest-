@@ -108,22 +108,28 @@ export default function Brand() {
 
       <section className="section brand-logo">
         <div className="container">
-          <SectionHead kicker="02 · Logo" title="A hillside that grows." />
+          <SectionHead kicker="02 · Logo" title="The bowl that carries the harvest." />
           <div className="brand-two">
             <Reveal className="logo-construct">
               <svg viewBox="0 0 320 320" aria-hidden="true" className="logo-construct__grid">
                 <path d="M0 80h320M0 160h320M0 240h320M80 0v320M160 0v320M240 0v320" stroke="currentColor" strokeOpacity=".12" />
               </svg>
               <LogoMark size={240} />
-              <span className="logo-construct__tag logo-construct__tag--a">Sun · a new day's harvest</span>
-              <span className="logo-construct__tag logo-construct__tag--b">Terraces · the farms</span>
-              <span className="logo-construct__tag logo-construct__tag--c">Chilli-red band · warmth</span>
-              <span className="logo-construct__tag logo-construct__tag--d">Stem · growth</span>
+              <span className="logo-construct__tag logo-construct__tag--a">Rising sun · a fresh harvest every morning</span>
+              <span className="logo-construct__tag logo-construct__tag--b">Three paddy stalks · farmer, us, you</span>
+              <span className="logo-construct__tag logo-construct__tag--c">Bangchung · farm to table</span>
+              <span className="logo-construct__tag logo-construct__tag--d">The weave · community</span>
             </Reveal>
             <Reveal delay={1} className="logo-explain">
-              <p>The mark is a <strong>leaf</strong> whose body is a <strong>terraced hillside</strong>, the landscape every Bhutanese farmer knows. Three curved terraces climb towards a <strong>saffron sun</strong> at the tip. The lowest terrace is chilli red, a nod to the kemar band painted on dzong walls and to ema, the country's favourite ingredient.</p>
-              <p>Out of respect, we avoid the national emblem and the thunder dragon (druk) itself. The name carries "Druk"; the mark carries the land.</p>
-              <p>The wordmark is set in <strong>Fraunces</strong> with a soft, slightly rounded feel, friendly rather than corporate. "Harvest" is italic, like a handwritten label on a sack of rice.</p>
+              <p>The mark is a <strong>bangchung</strong>, the woven bamboo bowl Bhutanese families have used for generations to carry rice and ema datshi between home and field and to share food at the table. It is literally how food travels <em>from farm to table</em>, so it carries our whole promise in one shape.</p>
+              <p>Out of the bowl grow <strong>three paddy stalks</strong>. Rice is the heart of every Bhutanese meal, and three stalks from one bowl stand for the three people we connect: <strong>the farmer, Druk Harvest and your family</strong>. A <strong>saffron sun</strong> rises behind them: a new day's harvest, picked fresh.</p>
+              <p>The zig-zag <strong>weave</strong> comes from bangchung and kira weaving, where many thin strands become one strong bowl. That is how a community works. The bowl is <strong>chilli red</strong>, the colour of ema drying on rooftops and of the kemar band on dzong walls.</p>
+              <ul className="logo-why">
+                <li><strong>Why not the dragon?</strong> The druk belongs to the nation and its emblem. Out of respect, the name carries "Druk" and the mark carries daily life.</li>
+                <li><strong>Why not a generic leaf or tractor?</strong> Any farm brand in the world could use those. Only Bhutan has the bangchung.</li>
+                <li><strong>Why so simple?</strong> It has to read on a phone screen, a rice sack and a 24 px favicon, and still look right in one colour.</li>
+              </ul>
+              <p>The wordmark is set in <strong>Fraunces</strong>, soft and friendly rather than corporate. "Harvest" is italic, like a handwritten label on a sack of rice.</p>
               <div className="logo-rules">
                 <div><strong>Clear space</strong><span>Height of the "D" on every side</span></div>
                 <div><strong>Minimum size</strong><span>24 px icon · 120 px full logo</span></div>
@@ -236,7 +242,7 @@ export default function Brand() {
           <div className="print-grid">
             <Reveal className="biz-card">
               <div className="biz-card__front"><Logo reversed size={34} /><div className="kira-band kira-band--thin" /></div>
-              <div className="biz-card__back"><strong>Sonam Choden</strong><span>Farmer relations</span><span>+975 17 00 00 00</span><span>hello@drukharvest.example</span></div>
+              <div className="biz-card__back"><strong>Yangchen</strong><span>Chief Executive Officer</span><span>+975 17 00 00 00</span><span>hello@drukharvest.example</span></div>
               <small>Business card</small>
             </Reveal>
             <Reveal delay={1} className="label-tag">

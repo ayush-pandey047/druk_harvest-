@@ -557,3 +557,19 @@ mark.hl::after {
   .marquee__track { animation: none !important; }
   .curtain { display: none; }
 }
+
+/* Season scene: replays each time a stage becomes active */
+.season-scene .ss-sun, .season-scene .ss-band, .season-scene .ss-pop, .season-scene .ss-house { transform-box: fill-box; }
+.season-story__scene.is-active .ss-sun { animation: ss-rise 1.2s var(--ease-out) both, sun-breathe 4s ease-in-out 1.2s infinite alternate; transform-origin: center; }
+.season-story__scene.is-active .ss-band { animation: ss-band 0.9s var(--ease-out) both; animation-delay: calc(var(--i) * 90ms); }
+.season-story__scene.is-active .ss-house { animation: ss-house 0.8s var(--ease-spring) 0.35s both; transform-origin: bottom center; }
+.season-story__scene.is-active .ss-pop { animation: ss-pop 0.6s var(--ease-spring) both; animation-delay: calc(500ms + var(--i) * 45ms); transform-origin: bottom center; }
+.season-story__scene.is-active .ss-sway { transform-box: fill-box; transform-origin: bottom center; animation: sway 2.4s ease-in-out infinite alternate; }
+.season-story__scene.is-active .ss-rain { animation: ss-rain 0.9s linear infinite; animation-delay: calc(var(--i) * -0.13s); }
+.season-story__scene.is-active .ss-bird { animation: ss-bird 6s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -1.2s); }
+@keyframes ss-rise { from { transform: translateY(80px) scale(0.7); opacity: 0; } }
+@keyframes ss-band { from { transform: translateY(60px); } }
+@keyframes ss-house { from { transform: translateY(30px) scale(0.6); opacity: 0; } }
+@keyframes ss-pop { from { transform: scale(0); opacity: 0; } }
+@keyframes ss-rain { from { transform: translateY(-30px); opacity: 0; } 30% { opacity: 1; } to { transform: translateY(120px); opacity: 0; } }
+@keyframes ss-bird { to { transform: translate(60px, -14px); } }

@@ -21,9 +21,10 @@ const VALUES = [
 ];
 
 const TEAM = [
-  { name: 'Sonam Choden', role: 'Co-founder · Farmer relations', initials: 'SC', tone: '#D7322A' },
-  { name: 'Karma Dorji', role: 'Co-founder · Logistics', initials: 'KD', tone: '#2440A6' },
-  { name: 'Deki Lhamo', role: 'Customer care', initials: 'DL', tone: '#0FA3A0' },
+  { name: 'Yangchen', role: 'Chief Executive Officer', text: 'Sets the direction and keeps every promise we make to farmers and families.', tone: '#D7322A', icon: 'sprout' },
+  { name: 'Choekey', role: 'Administration', text: 'Runs the day-to-day: supplier agreements, schedules and the paperwork that keeps us dependable.', tone: '#2440A6', icon: 'list' },
+  { name: 'Avinash', role: 'Marketing', text: 'Tells the farmers\' stories and makes sure people across Bhutan know where to find local food.', tone: '#FF7A1A', icon: 'heart' },
+  { name: 'Ayush', role: 'IT & Technology', text: 'Builds and looks after the website, the enquiry system and everything digital.', tone: '#0FA3A0', icon: 'check' },
 ];
 
 export default function OurStory() {
@@ -83,24 +84,24 @@ export default function OurStory() {
         <div className="container">
           <Reveal as="blockquote" className="big-quote">
             <p>“When a farmer knows their rice will be bought every season, they can plan. They can mend the terrace walls. They can teach their children. That's the whole idea.”</p>
-            <footer>Sonam Choden, co-founder <small>(illustrative)</small></footer>
+            <footer>The Druk Harvest team</footer>
           </Reveal>
         </div>
       </section>
 
       <section className="section team">
         <div className="container">
-          <SectionHead kicker="The team" title="A small team in Thimphu." />
+          <SectionHead kicker="The team" title="The people behind Druk Harvest.">Four of us, each looking after one part of the journey from farm to table.</SectionHead>
           <div className="team__grid">
             {TEAM.map((m, i) => (
-              <Reveal key={m.name} delay={i} className="team__card">
-                <span className="team__avatar" style={{ background: m.tone }}>{m.initials}</span>
+              <Reveal key={m.name} delay={i} className="team__card" style={{ '--tone': m.tone }} data-spotlight>
+                <span className="team__avatar" style={{ background: m.tone }}>{m.name[0]}<i><Icon name={m.icon} size={18} /></i></span>
+                <p className="team__role">{m.role}</p>
                 <h3>{m.name}</h3>
-                <p>{m.role}</p>
+                <p>{m.text}</p>
               </Reveal>
             ))}
           </div>
-          <p className="fine">Team names are illustrative placeholders.</p>
           <Reveal className="center-cta"><Link to="/farmers" className="btn btn--primary btn--lg" data-magnetic>Meet our farmers <Icon name="arrow" size={20} /></Link></Reveal>
         </div>
       </section>
